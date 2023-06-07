@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="./imgs/logo/my_logo.png" alt="logo" width="200"  height="auto" />
+  <img src="./imgs/portfolio-logo/portfolio-logo.png" alt="logo" width="200"  height="auto" />
   
   <br/>
 
