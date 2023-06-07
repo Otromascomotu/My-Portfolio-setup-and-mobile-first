@@ -3,6 +3,14 @@
   justify-content: space-between;
 }
 
+.my-logo {
+  padding: 10px 12px;
+}
+
+.hamburguer-menu {
+  padding: 8px;
+}
+
 h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
