@@ -4,7 +4,7 @@ nav {
   justify-content: space-between;
 }
 
- /* hover effect */
+/* hover effect */
 .hamburguer-menu:hover {
   cursor: pointer;
 }
@@ -20,16 +20,16 @@ nav {
 }
 
 .container {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-margin: 114px 24px;
-gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 114px 24px;
+  gap: 12px;
 }
 
 /* social media icons section */
 ul {
-  display:flex;
+  display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -39,7 +39,7 @@ ul {
 
 /* large text section */
 p {
-  font-family: 'Poppins';
+  font-family: "Poppins", arial;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -52,67 +52,66 @@ p {
 
 /* first title with the name */
 h1 {
-  font-family: 'Poppins';
+  font-family: "Poppins", arial;
   font-style: normal;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
   margin: 0;
 }
 
 /* second title */
 h2 {
-  font-family: 'Poppins';
+  font-family: "Poppins", arial;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 /* Media query for mobile screens */
 @media screen and (max-width: 375px) {
-nav {
+  nav {
     flex-direction: column;
     align-items: center;
   }
 
-.container {
-  margin: 5% 4%;
+  .container {
+    margin: 5% 4%;
   }
 
-p {
-  font-size: 18px;
-  line-height: 26px;
-  width: 70%;
-  max-width: 500px;
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    width: 70%;
+    max-width: 500px;
   }
 }
 
 /* Media query for desktop screens */
 @media (min-width: 376px) and (min-width: 768px) {
-nav {
-  flex-direction: row;
+  nav {
+    flex-direction: row;
   }
 
-.name {
-  border-bottom-left-radius: 6em;
-  border-bottom-right-radius: 12em;
+  .name {
+    border-bottom-left-radius: 6em;
+    border-bottom-right-radius: 12em;
   }
 
-.container {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 24px;
-  margin: 5% 10%;
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    margin: 5% 10%;
   }
 
-p {
-  font-size: 20px;
-  line-height: 28px;
-  width: 50%;
-  max-width: 600px;
+  p {
+    font-size: 20px;
+    line-height: 28px;
+    width: 50%;
+    max-width: 600px;
   }
 }
-
