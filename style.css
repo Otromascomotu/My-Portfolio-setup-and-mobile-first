@@ -1,5 +1,10 @@
-/* navigation bar */
-nav {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* header section */
+header {
   display: flex;
   justify-content: space-between;
 }
@@ -10,7 +15,7 @@ nav {
 }
 
 /* main section */
-.name {
+.background-image {
   background-image: url("./imgs/background-image/header-shapes-mobile.png");
   position: absolute;
   background-repeat: no-repeat;
@@ -27,7 +32,19 @@ nav {
   gap: 12px;
 }
 
-/* social media icons section */
+
+/* first title with the name */
+.container h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5vh;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 0;
+}
+
+/* social media section */
 ul {
   display: flex;
   list-style-type: none;
@@ -50,19 +67,11 @@ p {
   margin: 0;
 }
 
-/* first title with the name */
-h1 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-size: 40px;
-  line-height: 52px;
-  color: #172b4d;
-  margin: 0;
-}
+
 
 /* second title */
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", arial, helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
