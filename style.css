@@ -39,7 +39,7 @@ ul {
 
 /* large text section */
 p {
-  font-family: "Poppins", arial;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -52,7 +52,7 @@ p {
 
 /* first title with the name */
 h1 {
-  font-family: "Poppins", arial;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 40px;
   line-height: 52px;
@@ -62,7 +62,7 @@ h1 {
 
 /* second title */
 h2 {
-  font-family: "Poppins", arial;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
