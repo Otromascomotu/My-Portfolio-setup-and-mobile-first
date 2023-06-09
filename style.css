@@ -32,7 +32,6 @@ header {
   gap: 12px;
 }
 
-
 /* first title with the name */
 .container h1 {
   font-family: "Poppins", sans-serif;
@@ -66,8 +65,6 @@ p {
   color: #344563;
   margin: 0;
 }
-
-
 
 /* second title */
 h2 {
