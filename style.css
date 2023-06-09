@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* header section */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* hover effect */
+.hamburguer-menu:hover {
+  cursor: pointer;
+}
+
+/* main section */
+.background-image {
+  background-image: url("./imgs/background-image/header-shapes-mobile.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-bottom-left-radius: 12em;
+  border-bottom-right-radius: 6em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 114px 24px;
+  gap: 12px;
+}
+
+/* first title with the name */
+.container h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5vh;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 0;
+}
+
+/* social media section */
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+/* large text section */
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 327px;
+  height: 146px;
+  color: #344563;
+  margin: 0;
+}
+
+/* second title */
+h2 {
+  font-family: "Poppins", arial, helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 375px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    margin: 5% 4%;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    width: 70%;
+    max-width: 500px;
+  }
+}
+
+/* Media query for desktop screens */
+@media (min-width: 376px) and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+
+  .name {
+    border-bottom-left-radius: 6em;
+    border-bottom-right-radius: 12em;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    margin: 5% 10%;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
+    width: 50%;
+    max-width: 600px;
+  }
+}
