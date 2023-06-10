@@ -19,23 +19,26 @@ header {
   border-bottom-right-radius: 6em;
 }
 
-.name-container {
+.name-container,
+.about-myself-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 114px 24px;
+  margin: 60px 24px;
   gap: 12px;
 }
 
 /* first title with the name */
-.name-container h1 {
+.name-container,
+.about-myself-container,
+h1 {
   font-family: "Poppins", arial, helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 5vh;
   line-height: 52px;
   color: #172b4d;
-  margin: 0;
+  margin-left: 20 px;
 }
 
 /* social media section */
@@ -71,101 +74,65 @@ h2 {
   color: #7f8cff;
 }
 
-/* Media query for mobile screens */
-@media screen and (max-width: 375px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .name-container {
-    margin: 5% 4%;
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 26px;
-    width: 70%;
-    max-width: 500px;
-  }
-}
-
-/* Media query for desktop screens */
-@media (min-width: 376px) and (min-width: 768px) {
-  .navbar {
-    flex-direction: row;
-  }
-
-  .background-image {
-    border-bottom-left-radius: 6em;
-    border-bottom-right-radius: 12em;
-  }
-
-  .name-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 24px;
-    margin: 5% 10%;
-  }
-
-  p {
-    font-size: 20px;
-    line-height: 28px;
-    width: 50%;
-    max-width: 600px;
-  }
-}
-
 /* Works section */
-.works-container {
+.works-container,
+.multi-post-container {
   display: grid;
   grid-template-rows: auto;
   justify-content: center;
-  /*  width: 327px;
-  height: 552px; */
-  gap: 12px;
 }
-
-/* .snapshot-portfolio {
-  width: 295px;
-  height: 220 px;
-} */
 
 .card {
   display: flex;
   flex-direction: column;
+  border: 1px solid #dfe1e6;
 }
 
 .card-one {
+  display: flex;
   justify-content: center;
+  margin-top: 10px;
+}
+
+.card-two {
+  margin-left: 25px;
 }
 
 .three-elements-row {
   display: flex;
   justify-content: space-between;
   margin-right: 75px;
-  padding: 12px 0px;
+  padding: 20px 0px;
 }
 
-.categories {
-  list-style: none;
+.three-elements {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  color: #6070ff;
+  letter-spacing: 0.03em;
 }
 
-.tonic-title {
+.tonic-title,
+.multi-post-title,
+.stories-title {
   font-family: "Poppins", arial, helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  /* margin: 248px 16px 268px 16px; */
   color: #172d4d;
 }
 
 .canopy-title {
   font-family: "Poppins", arial, helvetica, sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 13px;
   line-height: 16px;
   color: #344563;
@@ -199,19 +166,175 @@ h2 {
   font-size: 12px;
   line-height: 16px;
   color: #6070ff;
-  margin: 10px 10px 10px 81px;
+  gap: 8px;
+  margin: 10px 10px 0px 6px;
 }
 
-button {
+.button1 {
   font-family: "Poppins", arial, helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   color: #396df2;
+  background: #fff;
   border: 1px solid #6070ff;
-  border-color: #6070ff;
   border-radius: 7px;
-  padding: 0.5em 1em;
-  margin-bottom: 100px;
+  width: 126px;
+  height: 48px;
+  margin: 20px 0px 80px 0px;
+}
+
+.button2 {
+  font-family: "Poppins", arial, helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  background: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 7px;
+  width: 182px;
+  height: 48px;
+  margin: 20px 0px 80px 0px;
+}
+
+.about-myself-container {
+  display: flex;
+  margin-left: 20px;
+}
+
+/* Languages Container */
+.languages-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-left: 30px;
+}
+
+.languages-text,
+.frameworks-text,
+.skills-text {
+  font-family: "Poppins", arial, helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.javascript-grid,
+.html-grid,
+.css-grid {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.languages-text {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-content: center;
+}
+
+.enabled-menu {
+  grid-area: 1 / 2 / 2 / 3;
+  margin-bottom: 15px;
+}
+
+.javascript-grid {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+
+.html-grid {
+  grid-area: 3 / 1 / 4 / 2;
+  display: flex;
+  align-items: center;
+  /*  justify-content: space-around; */
+}
+
+.css-grid {
+  grid-area: 4 / 1 / 5 / 2;
+  display: flex;
+  align-items: center;
+  /*  justify-content: space-around; */
+}
+
+.frameworks-text {
+  grid-area: 5 / 1 / 6 / 2;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.disabled-menu1 {
+  grid-area: 5 / 2 / 6 / 3;
+  margin-top: 15px;
+}
+
+.skills-text {
+  grid-area: 6 / 1 / 7 / 2;
+  justify-content: display-flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.disabled-menu2 {
+  grid-area: 6 / 2 / 7 / 3;
+  margin-top: 15px;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 375px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name-container {
+    margin: 5% 4%;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    width: 70%;
+    max-width: 500px;
+  }
+}
+
+/* Media query for desktop screens */
+@media (min-width: 376px) and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .background-image {
+    border-bottom-left-radius: 6em;
+    border-bottom-right-radius: 12em;
+  }
+
+  .name-container,
+  .about-myself-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    margin: 5% 10%;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
+    width: 50%;
+    max-width: 600px;
+  }
 }
