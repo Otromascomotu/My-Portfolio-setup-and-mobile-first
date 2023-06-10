@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Header Section -->
@@ -32,6 +34,7 @@
       </nav>
     </header>
     <main class="background-image">
+
       <section class="name-container">
         <h1>
           I'm Luis.
@@ -41,7 +44,7 @@
           you!
         </h1>
         <!-- Large Text Section -->
-        <p>
+        <p class="first-paragraph">
           I’m a software developer! I can help you build a product, feature or
           website Look through some of my work and experience! If you like what
           you see and have a project you need coded, don’t hesitate to contact
@@ -49,7 +52,7 @@
         </p>
         <h2>LET'S CONNECT</h2>
         <!-- Social Media Section -->
-        <ul>
+        <ul class="social-media1">
           <li>
             <a href="https://twitter.com/otromascomotu">
               <img src="./imgs/icons/Twitter.svg" alt="twitter logo" />
@@ -88,7 +91,7 @@
             />
           </div>
           <div class="card-two">
-            <h2 class="tonic-title">Tonic</h2>
+            <h3 class="tonic-title">Tonic</h3>
             <div class="three-elements-row">
               <span class="canopy-title"> CANOPY </span>
               <div class="circle"></div>
@@ -108,9 +111,7 @@
             <button type="button" class="button1">See project</button>
           </div>
         </div>
-      </section>
       <!-- Multipost Section -->
-      <section class="multi-post-container">
         <div class="card">
           <div class="card-one">
             <img
@@ -120,7 +121,7 @@
             />
           </div>
           <div class="card-two">
-            <h2 class="multi-post-title">Multi-Post</h2>
+            <h3 class="multi-post-title">Multi-Post</h3>
             <div class="three-elements-row">
               <span class="canopy-title"> CANOPY </span>
               <div class="circle"></div>
@@ -140,9 +141,7 @@
             <button type="button" class="button1">See project</buttonbutton1>
           </div>
         </div>
-      </section>
       <!-- Tonic Section -->
-      <section class="works-container">
         <div class="card">
           <div class="card-one">
             <img
@@ -152,7 +151,7 @@
             />
           </div>
           <div class="card-two">
-            <h2 class="tonic-title">Tonic</h2>
+            <h3 class="tonic-title">Tonic</h3>
             <div class="three-elements-row">
               <span class="canopy-title"> CANOPY </span>
               <div class="circle"></div>
@@ -172,9 +171,7 @@
             <button type="button" class="button1">See project</button>
           </div>
         </div>
-      </section>
       <!-- Multipost Section -->
-      <section class="multi-post-container">
         <div class="card">
           <div class="card-one">
             <img
@@ -184,7 +181,7 @@
             />
           </div>
           <div class="card-two">
-            <h2 class="multi-post-title">Multi-Post</h2>
+            <h3 class="multi-post-title">Multi-Post</h3>
             <div class="three-elements-row">
               <span class="canopy-title"> CANOPY </span>
               <div class="circle"></div>
@@ -192,10 +189,12 @@
               <div class="circle"></div>
               <span class="year-title"> 2015 </span>
             </div>
+            <section class="section-paragraph">
             <p class="daily-selection-paragraph">
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
             </p>
+            </section>
             <ul class="categories">
               <li class="three-elements">HTML</li>
               <li class="three-elements">CSS</li>
@@ -207,60 +206,71 @@
       </section>
       <!-- About Myself Section -->
       <section class="about-myself-container">
-        <h1>About Myself</h1>
+        <div>
+          <h4>About Myself</h4>
         <!-- Large Text Section -->
-        <p>
-          I’m a software developer! I can help you build a product, feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hesitate to contact
-          me.
-        </p>
-        <h2>LET'S CONNECT</h2>
+          <div class="presentation-two">
+            <p class="about-myself-paragraph">
+              Hello I’m a software developer! I can help you build a product, feature or
+              website Look through some of my work and experience! If you like what
+              you see and have a project you need coded, don’t hesitate to contact
+              me.
+            </p>
+          </div>
+          <h5>LET'S CONNECT</h5>
         <!-- Social Media Section -->
-        <ul class="">
-          <li>
-            <a href="https://twitter.com/otromascomotu">
-              <img src="./imgs/icons/Twitter.svg" alt="twitter logo" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/luis-laverde-developer/">
-              <img src="./imgs/icons/Linkedin.svg" alt="linkedin logo" />
-            </a>
-          </li>
-          <li>
-            <a href="https://medium.com/@otromascomotu">
-              <img src="./imgs/icons/Medium.svg" alt="medium logo" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Otromascomotu">
-              <img src="./imgs/icons/Github.svg" alt="github logo" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="./imgs/icons/Angelist.svg" alt="angellist logo" />
-            </a>
-          </li>
-        </ul>
+          <ul class="social-media2">
+            <li>
+              <a href="https://twitter.com/otromascomotu">
+                <img src="./imgs/icons/Twitter.svg" alt="twitter logo" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/luis-laverde-developer/">
+                <img src="./imgs/icons/Linkedin.svg" alt="linkedin logo" />
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@otromascomotu">
+                <img src="./imgs/icons/Medium.svg" alt="medium logo" />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Otromascomotu">
+                <img src="./imgs/icons/Github.svg" alt="github logo" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./imgs/icons/Angelist.svg" alt="angellist logo" />
+              </a>
+            </li>
+          </ul>
         <button type="button" class="button2">Get my resume</button>
-      </section>
-      <section>
-        <!-- Languages Section -->
-      <div class="languages-container">
-        <span class="languages-text">Languages</span>
-        <div class="enabled-menu"> <img src="./imgs/enabled-menu/enabled-menu.svg" alt="enabled menu logo" /></div>
-        <div class="javascript-grid"> <img src="./imgs/languages-logos/javascript.svg" alt="javascript logo" />Javascript</div>
-        <div class="html-grid"> <img src="./imgs/languages-logos/html.svg" alt="html logo" />HTML</div>
-        <div class="css-grid"> <img src="./imgs/languages-logos/css.svg" alt="css logo" />CSS</div>
-        <!-- Frameworks Section -->
-        <span class="frameworks-text">Frameworks</span>
-        <div class="disabled-menu1"><img src="./imgs/disabled-menu/disabled-menu.svg" alt="disabled menu logo" /></div>
-        <!-- Skills Section -->
-        <span class="skills-text">Skills</span>
-        <div class="disabled-menu2"><img src="./imgs/disabled-menu/disabled-menu.svg" alt="disabled menu logo" /></div>
         </div>
+      </section>
+      <!-- Languages Section -->
+      <section>
+       <ul class="languages-container">
+          <li class="languages-text">Languages</li>
+            <img class="enabled-menu" src="./imgs/enabled-menu/enabled-menu.svg" alt="enabled menu logo" />
+        
+          <li class="javascript-text">Javascript</li>
+            <img class="javascript-logo" src="./imgs/languages-logos/javascript.svg" alt="javascript logo" />
+
+          <div class="html-text">HTML</div>
+            <img class="html-logo" class=html src="./imgs/languages-logos/html.svg" alt="html logo" />
+
+          <li class="css-text">CSS</li>
+            <img class="css-logo" src="./imgs/languages-logos/css.svg" alt="css logo" />
+
+          <li class="frameworks-text">Frameworks</li>
+            <img class="disabled-menu1" src="./imgs/disabled-menu/disabled-menu.svg" alt="disabled menu logo" />
+
+          <li class="skills-text">Skills</li>
+            <img class="disabled-menu2" src="./imgs/disabled-menu/disabled-menu.svg" alt="disabled menu logo" />
+      </ul>
+
       </section>
     </main>
   </body>
