@@ -26,7 +26,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   height: 90vh;
-  margin: 60px 24px 0px;
+  margin: 60px 24px 0;
   gap: 12px;
 }
 
@@ -39,7 +39,6 @@ h1 {
   font-size: 5vh;
   line-height: 52px;
   color: #172b4d;
-  /*  margin-left: 20 px; */
 }
 
 /* social media section */
@@ -106,7 +105,6 @@ h2 {
   flex-direction: column;
   width: 295px;
   height: 288px;
-  /* margin-left: 25px; */
 }
 
 .three-elements-row {
@@ -205,7 +203,7 @@ h2 {
   width: 126px;
   height: 48px;
   margin: 20px 0 80px 0;
-  left: 0px;
+  left: 0;
   top: 12px;
   padding: 12px;
 }
@@ -250,7 +248,7 @@ h2 {
 .presentation-two {
   height: 147px;
   width: 327px;
-  left: 0px;
+  left: 0;
   top: 47px;
 }
 
@@ -263,6 +261,7 @@ h5 {
   color: #7f8cff;
   margin-top: 12px;
 }
+
 /* Languages Container */
 .languages-container {
   display: grid;
@@ -318,7 +317,6 @@ h5 {
 .javascript-text {
   grid-area: 2 / 1 / 3 / 2;
   display: flex;
-  /*  align-items: center; */
 }
 
 .html-logo,
@@ -326,7 +324,6 @@ h5 {
 .elemento {
   grid-area: 3 / 1 / 4 / 2;
   display: flex;
-  /* align-items: center; */
 }
 
 .css-logo,
