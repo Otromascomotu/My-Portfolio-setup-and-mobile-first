@@ -5,7 +5,12 @@ header {
 }
 
 /* hover effect */
-.hamburguer-menu:hover {
+.hamburguer-menu,
+.button1,
+.button2,
+.enabled-menu,
+.disabled-menu1,
+.disabled-menu2:hover {
   cursor: pointer;
 }
 
