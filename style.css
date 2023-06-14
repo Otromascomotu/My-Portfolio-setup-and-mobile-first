@@ -12,8 +12,8 @@ header {
 }
 
 /* main section */
-.background-image {
-  background-image: url("./imgs/background-image/header-shapes-mobile.png");
+.background-images {
+  background-image: url("./imgs/background-images/header-shapes-mobile.png");
   position: absolute;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -368,18 +368,14 @@ h5 {
   cursor: pointer;
 }
 
-#form {
-  background-image: url("");
-  border-top-left-radius: 10px;
-  padding: 20px;
-}
-
-h1 {
-  margin-top: 0;
-}
+/* Contact Form Section */
 
 p {
   text-align: center;
+}
+
+.first-paragraph {
+  text-align: left;
 }
 
 .contact-form {
@@ -387,32 +383,34 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 110vh;
   width: 100vw;
-  margin: 3vh 0;
   background-color: #6070ff;
   color: #ebebff;
-  border-top-left-radius: 15%;
-  background-image: url('./imgs/background-image/header-shapes-mobile.png');
+  border-radius: 60px 0 0 0;
+  background-image: url("./imgs/background-images/form-contact.png");
+  background-size: cover;
 }
 
 .cform {
   width: 90vw;
-  height: 80vh;
+  height: 100vh;
   padding: 0;
-  margin: auto;
+  margin-top: 12vh;
 }
 
 .cform h2 {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12vw;
+  font-family: "Poppins", arial, helvetica, sans-serif;
+  font-size: 5vh;
   font-weight: 700;
-  margin: auto;
+  margin: 7vh auto;
+  line-height: 0;
+  text-align: center;
 }
 
 .cform p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", arial, helvetica, sans-serif;
   font-size: 5vw;
   width: 85vw;
   margin: 3vh auto;
@@ -421,11 +419,11 @@ p {
 
 .cform input,
 textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", arial, helvetica, sans-serif;
   font-size: 2.5vh;
   border: none;
-  width: 85vw;
-  margin: 0;
+  width: 90vw;
+  margin: 1vh auto;
   line-height: 5vh;
   border-radius: 5px;
 }
@@ -436,7 +434,7 @@ textarea {
 
 .cform input[type="submit"] {
   width: 40vw;
-  height: 6vh;
+  height: 7.5vh;
   border: none;
   border-radius: 8px;
   color: #6070ff;
