@@ -358,7 +358,15 @@ h5 {
   margin-left: 100px;
 }
 
-/* hover effect */
+/* Effects to the buttons */
+.button1,
+.button2,
+#submit {
+  color: #6070ff;
+  background-color: #fff;
+  border: 1px solid #7f8cff;
+}
+
 .hamburguer-menu,
 .button1,
 .button2,
@@ -371,25 +379,17 @@ h5 {
 
 .button1,
 .button2,
-#submit {
-  color: #6070ff;
-  background-color: #ffffff;
-  border: 1px solid #7f8cff;
-}
-
-.button1,
-.button2,
 #submit:active {
-  color: #ffffff;
+  color: #fff;
   background-color: #2230d2;
 }
 
 .button1,
 .button2,
 #submit:hover {
-  color: #ffffff;
+  color: #fff;
   background-color: #6070ff;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .button1,
@@ -401,7 +401,6 @@ h5 {
 }
 
 /* Contact Form Section */
-
 #contact-form-text {
   text-align: center;
 }
