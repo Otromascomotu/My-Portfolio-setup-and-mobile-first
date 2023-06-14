@@ -12,8 +12,8 @@ header {
 }
 
 /* main section */
-.background-image {
-  background-image: url("./imgs/background-image/header-shapes-mobile.png");
+.background-images {
+  background-image: url("./imgs/background-images/header-shapes-mobile.png");
   position: absolute;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -358,14 +358,129 @@ h5 {
   margin-left: 100px;
 }
 
-/* hover effect */
+/* Effects to the buttons */
+.button1,
+.button2,
+#submit {
+  color: #6070ff;
+  background-color: #fff;
+  border: 1px solid #7f8cff;
+}
+
 .hamburguer-menu,
 .button1,
 .button2,
 .enabled-menu,
 .disabled-menu1,
-.disabled-menu2:hover {
+.disabled-menu2,
+#submit:hover {
   cursor: pointer;
+}
+
+.button1,
+.button2,
+#submit:active {
+  color: #fff;
+  background-color: #2230d2;
+}
+
+.button1,
+.button2,
+#submit:hover {
+  color: #fff;
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.button1,
+.button2,
+#submit:disabled {
+  color: #5e6c84;
+  background-color: #e5e5e5;
+  border: 1px solid #c1c7d0;
+}
+
+/* Contact Form Section */
+#contact-form-text {
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+  width: 97vw;
+  background-color: #6070ff;
+  color: #ebebff;
+  border-radius: 60px 0 0 0;
+  background-image: url("./imgs/background-images/form-contact.png");
+  background-size: cover;
+}
+
+.cform {
+  width: 90vw;
+  height: 100vh;
+  padding: 0;
+  margin-top: 12vh;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 5px;
+}
+
+.cform h2 {
+  color: #fff;
+  font-family: "Poppins", arial, helvetica, sans-serif;
+  font-size: 5vh;
+  font-weight: 700;
+  margin: 7vh auto;
+  line-height: 0;
+  text-align: center;
+}
+
+.cform p {
+  font-family: "Poppins", arial, helvetica, sans-serif;
+  font-size: 5vw;
+  width: 85vw;
+  margin: 3vh auto;
+  font-weight: 400;
+}
+
+.cform input,
+textarea {
+  font-family: "Poppins", arial, helvetica, sans-serif;
+  font-size: 2.5vh;
+  border: none;
+  width: 90vw;
+  margin: 0.5vh auto;
+  line-height: 5vh;
+  border-radius: 5px;
+}
+
+.cform textarea {
+  height: 20vh;
+}
+
+.cform input[type="submit"] {
+  width: 40vw;
+  height: 7.5vh;
+  border: none;
+  border-radius: 8px;
+  color: #6070ff;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
 }
 
 /* Media query for mobile screens */
