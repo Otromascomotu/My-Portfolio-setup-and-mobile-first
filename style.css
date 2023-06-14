@@ -364,7 +364,8 @@ h5 {
 .button2,
 .enabled-menu,
 .disabled-menu1,
-.disabled-menu2:hover {
+.disabled-menu2,
+#submit:hover {
   cursor: pointer;
 }
 
