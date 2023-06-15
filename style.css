@@ -502,29 +502,59 @@ label {
 }
 
 /* Media query for desktop screens */
-@media (min-width: 376px) and (min-width: 768px) {
-  .navbar {
-    flex-direction: row;
+/* Media Queries */
+@media (min-width: 768px) {
+  /* Navbar Styles */
+  .menu li {
+    margin-left: 2rem;
   }
 
-  .background-image {
-    border-bottom-left-radius: 6em;
-    border-bottom-right-radius: 12em;
+  main {
+    margin-top: 120px; /* Adjust according to the height of your navbar */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 
-  .name-container,
-  .about-myself-container {
-    flex-direction: row;
+  /* Background Images Section */
+  .background-images {
+    justify-content: center;
+  }
+
+  /* Works Section */
+  .works-section,
+  .multipost-section,
+  .tonic-section,
+  .last-multipost-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .works-section .card,
+  .multipost-section .card,
+  .tonic-section .card,
+  .last-multipost-section .card {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    gap: 24px;
-    margin: 5% 10%;
+    text-align: left;
   }
 
-  p {
-    font-size: 20px;
-    line-height: 28px;
-    width: 50%;
-    max-width: 600px;
+  /* About Myself Section */
+  .about-myself-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
   }
-}
+
+  /* Languages Section */
+  .languages-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+  }
+
+
