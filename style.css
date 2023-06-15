@@ -502,7 +502,6 @@ label {
 }
 
 /* Media query for desktop screens */
-/* Media Queries */
 @media (min-width: 768px) {
   /* Navbar Styles */
   .menu li {
