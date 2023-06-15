@@ -510,7 +510,7 @@ label {
   }
 
   main {
-    margin-top: 120px; /* Adjust according to the height of your navbar */
+    margin-top: 120px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -556,5 +556,4 @@ label {
     align-items: center;
     text-align: left;
   }
-
-
+}
