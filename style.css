@@ -628,16 +628,27 @@ label {
 }
 
 /* Contact Form Section */
+.contact-form {
+  background-image: url("./imgs/background-images/contact-form-bg-desktop.svg");
+  justify-content: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
 #contact-form-text {
   width: 70%;
   font-size: 1.2vw;
   line-height: 1.5vw;
 }
 
-#contact-form {
-  background-image: url("./imgs/background-images/contact-form-bg-desktop.svg");
-  justify-content: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+.form-group input,
+.form-group textarea {
+  width: 35%;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+  width: 10%;
 }
