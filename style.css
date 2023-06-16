@@ -601,21 +601,14 @@ label {
     flex-direction: row-reverse;
   }
 
-  .works-section .card,
-  .multipost-section .card,
-  .tonic-section .card,
-  .last-multipost-section .card {
-    display: flex;
+  /* About Myself Section */
+  .about-myself-container {
     justify-content: center;
     align-items: center;
-    text-align: left;
   }
 
-  /* About Myself Section */
-  .about-myself-section {
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+  .about-myself-container div {
+    width: 45%;
   }
 
   /* Languages Section */
