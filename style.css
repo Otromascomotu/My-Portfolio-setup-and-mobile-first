@@ -8,11 +8,15 @@
 header {
   display: flex;
   justify-content: space-between;
-  width: 375px;
+  width: 327px;
+}
+
+.navbar-menu {
+  display: none;
 }
 
 /* main section */
-.background-images {
+.first-background-image {
   background-image: url("./imgs/background-images/header-shapes-mobile.png");
   position: absolute;
   background-repeat: no-repeat;
@@ -36,7 +40,7 @@ h1 {
   font-family: "Poppins", arial, helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 5vh;
+  font-size: 40px;
   line-height: 52px;
   color: #172b4d;
 }
@@ -484,7 +488,7 @@ label {
 }
 
 /* Media query for mobile screens */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -502,29 +506,142 @@ label {
 }
 
 /* Media query for desktop screens */
-@media (min-width: 376px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  /* Logo Styles */
+  header {
+    width: 100%;
+  }
+
+  .my-logo {
+    margin-left: 25px;
+  }
+
+  /* Navbar Styles */
+  .hamburguer-menu {
+    display: none;
+  }
+
   .navbar {
-    flex-direction: row;
-  }
-
-  .background-image {
-    border-bottom-left-radius: 6em;
-    border-bottom-right-radius: 12em;
-  }
-
-  .name-container,
-  .about-myself-container {
-    flex-direction: row;
+    top: 25px;
+    right: 155px;
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 24px;
-    margin: 5% 10%;
   }
 
-  p {
-    font-size: 20px;
-    line-height: 28px;
-    width: 50%;
-    max-width: 600px;
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
   }
+
+  .navbar-menu li {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+
+  .portfolio-link,
+  .about-link,
+  .contact-link {
+    color: #344563;
+  }
+
+  .first-background-image {
+    background-image: url("./imgs/background-images/desktop-bg.svg");
+    justify-content: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 75vw;
+    height: 60vh;
+  }
+
+  .name-container h1 {
+    width: 60%;
+    font-size: 3vw;
+    line-height: 3.5vw;
+  }
+
+  .first-paragraph {
+    width: 70%;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+  }
+
+  /* Background Images Section */
+  .first {
+    justify-content: center;
+  }
+
+  /* Works Section */
+  .works-container {
+    display: block;
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    margin: 5vh auto;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  /* About Myself Section */
+  .about-myself-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-myself-container div {
+    width: 45%;
+  }
+
+  /* Languages Section */
+  .languages-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+/* Contact Form Section */
+.contact-form {
+  background-image: url("./imgs/background-images/contact-form-bg-desktop.svg");
+  justify-content: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#contact-form-text {
+  width: 70%;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 35%;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+  width: 10%;
 }
